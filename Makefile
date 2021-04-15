@@ -4,3 +4,4 @@ brain-games: #Набирать эту команду руками довольн
 node bin/brain-games.js
 publish: #Для отладки публикации не нужно добавлять пакет в основной каталог NPM. На протяжении всего проекта используйте аргумент --dry-run
 npm publish --dry-run
+.PHONY: test
