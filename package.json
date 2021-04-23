@@ -21,6 +21,6 @@
   },
   "homepage": "https://github.com/Aleksandra-korza/frontend-project-lvl1#readme",
   "dependencies": {
-    "readline-sync": "^1.4.10"
+    "readline-sync": "file:node_modules/readline-sync"
   }
 }
