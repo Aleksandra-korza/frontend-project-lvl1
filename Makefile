@@ -10,6 +10,9 @@ brain-even: #запускает игру brain-even.
 brain-calc: #запускается игра brain-calc
 	bin/brain-calc.js
 
+brain-gcd: #запускается игра brain-calc
+	bin/brain-gcd.js
+
 publish: #Для отладки публикации не нужно добавлять пакет в основной каталог NPM. На протяжении всего проекта используйте аргумент --dry-run
 	npm publish --dry-run
 
