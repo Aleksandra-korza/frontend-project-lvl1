@@ -1,39 +1,27 @@
-import readlineSync from 'readline-sync';
+import game from './index.js'; // импортируем функцию которая создает игру. в src папке лежат файлы нашей программы.
 
-const invertAnswer = (answerUser) => {
-  if (answerUser === 'yes') {
-    return 'no';
-  }
-  return 'yes';
-};
+// отличающаяся часть новой игы. Игра которая использует движок из файла game.js.
 
-const createQuestions = (length = 3) => {
-  const questions = [];
-  for (let i = 0; i < length; i += 1) {
-    const q = Math.trunc(Math.random() * 100);
-    questions.push(q);
-  }
-  return questions;
-};
-
-const game = () => {
-  console.log('Welcome to the Brain Games!');
-  const name = readlineSync.question('May I have your name? ');
-  console.log(`Hello, ${name}!`);
-  console.log('Answer "yes" if the number is even, otherwise answer "no".');
-  const questions = createQuestions();
-  for (let i = 0; i < questions.length; i += 1) {
-    console.log(`Question: ${questions[i]}`);
-    const answer = readlineSync.question('Your answer: ');
-    if ((answer === 'yes' && questions[i] % 2 === 0) || (answer === 'no' && questions[i] % 2 !== 0)) {
-      console.log('Correct!');
-    } else {
-      console.log(`'${answer}' is wrong answer ;(. Correct answer was '${invertAnswer(answer)}'.`);
-      console.log(`Let's try again, ${name}!`);
-      return;
+const gameEven = () => {
+  const createQuestions = (length = 3) => {
+    const questions = [];
+    for (let i = 0; i < length; i += 1) {
+      const q = Math.trunc(Math.random() * 100);
+      questions.push(q);
     }
+    return questions;
+  };
+
+  const questions = createQuestions();
+
+  const rules = 'Answer "yes" if the number is even, otherwise answer "no".';
+
+  const correctAnswers = [];
+  for (let i = 0; i < questions.length; i += 1) {
+    const correctAnswer = questions[i] % 2 === 0 ? 'yes' : 'no';
+    correctAnswers.push(correctAnswer);
   }
-  console.log(`Congratulations, ${name}!`);
+  game(questions, rules, correctAnswers); // вызываю функцию, которая создает игру.
 };
 
-export default game;
+export default gameEven;
