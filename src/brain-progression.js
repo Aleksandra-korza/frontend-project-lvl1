@@ -21,7 +21,7 @@ const brainProgression = () => {
         question.push(x);
       }
       const u = Math.trunc(Math.random() * 10);
-      correctAnswer = question[u];
+      correctAnswer = String(question[u]);
       correctAnswers.push(correctAnswer);
       question[u] = '..';
 
