@@ -16,6 +16,9 @@ brain-gcd: #запускается игра brain-calc
 brain-progression: # запуск игры brain-progression
 	bin/brain-progression.js
 
+brain-prime: #запуск игры brain-prime
+	bin/brain-prime.js
+
 publish: #Для отладки публикации не нужно добавлять пакет в основной каталог NPM. На протяжении всего проекта используйте аргумент --dry-run
 	npm publish --dry-run
 

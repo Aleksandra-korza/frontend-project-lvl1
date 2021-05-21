@@ -1,0 +1,48 @@
+/* eslint-disable no-plusplus */
+import game from './index.js'; // импортируем функцию которая создает игру. в src папке лежат файлы нашей программы.
+
+// отличающаяся часть новой игы. Игра которая использует движок из файла game.js.
+
+// eslint-disable-next-line consistent-return
+const brainPrime = () => {
+  const createQuestions = (length = 3) => {
+    const questions = [];
+    for (let i = 0; i < length; i += 1) {
+      const question = Math.trunc(Math.random() * 100);
+      questions.push(question);
+    }
+    return questions;
+  };
+
+  const questions = createQuestions();
+
+  const rules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+
+  const correctAnswers = [];
+  // eslint-disable-next-line no-restricted-syntax
+  const answer = (x) => {
+    for (let i = 2; i < x - 1;) {
+      if ((x % i === 0) || (x === 0 || x === 1)) {
+        return false;
+      }
+      i += 1;
+    }
+    return true;
+  };
+
+  // eslint-disable-next-line no-restricted-syntax
+  for (let i = 0; i < questions.length; i += 1) {
+    const x = questions[i];
+    if (answer(x) === false) {
+      correctAnswers.push('no');
+    } else {
+      correctAnswers.push('yes');
+    }
+  }
+
+  console.log(questions, rules, correctAnswers);
+
+  game(questions, rules, correctAnswers); // вызываю функцию, которая создает игру.
+};
+
+export default brainPrime;
