@@ -40,8 +40,6 @@ const brainPrime = () => {
     }
   }
 
-  console.log(questions, rules, correctAnswers);
-
   game(questions, rules, correctAnswers); // вызываю функцию, которая создает игру.
 };
 
