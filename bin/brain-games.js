@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import name from '../src/cli.js';
+import brainGames from '../src/cli.js';
 
-console.log('Welcome to the Brain Games!');
-console.log(`Hello!${name}`);
+// eslint-disable-next-line no-undef
+brainGames();
