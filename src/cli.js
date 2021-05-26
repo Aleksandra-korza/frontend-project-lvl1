@@ -6,5 +6,4 @@ const brainGames = () => {
   // eslint-disable-next-line no-use-before-define
   console.log(`Hello, ${name}!`);
 };
-
 export default brainGames;
