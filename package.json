@@ -4,7 +4,6 @@
   "version": "1.0.0",
   "description": "[![Actions Status](https://github.com/Aleksandra-korza/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/Aleksandra-korza/frontend-project-lvl1/actions)",
   "bin": {
-    "code": "brain-games.js",
     "brain-games": "bin/brain-games.js",
     "brain-even": "bin/brain-even.js",
     "brain-calc": "bin/brain-calc.js",
