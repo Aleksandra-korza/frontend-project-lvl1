@@ -26,7 +26,6 @@ const gameCalc = () => {
     correctAnswers.push(correctAnswer);
   }
 
-  // eslint-disable-next-line no-undef
   game(questions, rules, correctAnswers);
 };
 

@@ -18,14 +18,11 @@ const gameEven = () => {
   // eslint-disable-next-line consistent-return
   const correctAnswer = (numb) => {
     const splits = numb.split(' ');
-    // eslint-disable-next-line no-alert
     const numbMax = Math.max(Number(splits[0]), Number(splits[1]));
-    // eslint-disable-next-line no-alert
     const numbMin = Math.min(Number(splits[0]), Number(splits[1]));
     if ((numbMax / numbMin) % 2 === 0) {
       return numbMin;
     }
-    // eslint-disable-next-line for-direction
     for (let i = numbMin - 1; i > 0; i -= 1) {
       if ((numbMin % i === 0) && (numbMax % i === 0)) {
         return i;
@@ -35,7 +32,6 @@ const gameEven = () => {
 
   const correctAnswers = [];
   for (let i = 0; i < questions.length; i += 1) {
-    // eslint-disable-next-line no-use-before-define
     correctAnswers.push(String(correctAnswer(questions[i])));
   }
 

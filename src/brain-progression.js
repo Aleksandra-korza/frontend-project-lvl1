@@ -1,7 +1,6 @@
 import game from './index.js';
 
 const brainProgression = () => {
-  // eslint-disable-next-line no-unused-vars
   let correctAnswer = '';
   const correctAnswers = [];
   const createQuestions = (length = 10) => {
@@ -16,8 +15,7 @@ const brainProgression = () => {
       // eslint-disable-next-line no-eval
       let x = eval(`${q} ${w} ${a}`);
       for (let z = 0; z < length; z += 1) {
-      // eslint-disable-next-line no-eval
-        x = eval(x + w + a);
+        x = (x + w + a);
         question.push(x);
       }
       const u = Math.trunc(Math.random() * 10);
@@ -32,8 +30,6 @@ const brainProgression = () => {
   };
 
   const questions = createQuestions();
-
-  // eslint-disable-next-line consistent-return
 
   const rules = 'What number is missing in the progression?';
 
