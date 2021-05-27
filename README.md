@@ -4,20 +4,19 @@
 <a href="https://codeclimate.com/github/Aleksandra-korza/frontend-project-lvl1/maintainability"><img src="https://api.codeclimate.com/v1/badges/742a11e5f9d7d51cd68c/maintainability" /></a>
 
 # Аскинема пакета brain-games
-
 <a href="https://asciinema.org/a/F84D4Qi5ooJZMAC1HQFu2vvMp" target="_blank"><img src="https://asciinema.org/a/F84D4Qi5ooJZMAC1HQFu2vvMp.svg" /></a>
 
 # Аскинема паката brain-even  
-https://asciinema.org/a/IjjtlMkaLFPh3Lb2Q5o81zYs5
+<a href="https://asciinema.org/a/IjjtlMkaLFPh3Lb2Q5o81zYs5" target="_blank"><img src="https://asciinema.org/a/IjjtlMkaLFPh3Lb2Q5o81zYs5.svg" /></a>
 
 # Аскинема паката brain-calc 
-https://asciinema.org/a/sK9Lf4rWKTBtkvGhvZmq9FNnp
+<a href="https://asciinema.org/a/sK9Lf4rWKTBtkvGhvZmq9FNnp" target="_blank"><img src="https://asciinema.org/a/sK9Lf4rWKTBtkvGhvZmq9FNnp.svg" /></a>
 
 # Аскинема паката brain-gcd 
-https://asciinema.org/a/jXGzUxWkwtrtRDasHsNM361zY
+<a href="https://asciinema.org/a/jXGzUxWkwtrtRDasHsNM361zY" target="_blank"><img src="https://asciinema.org/a/jXGzUxWkwtrtRDasHsNM361zY.svg" /></a>
 
 # Аскинема паката brain-progression 
-https://asciinema.org/a/W4sfFRURJLtQd3SVZThZj89Zr
+<a href="https://asciinema.org/a/W4sfFRURJLtQd3SVZThZj89Zr" target="_blank"><img src="https://asciinema.org/a/W4sfFRURJLtQd3SVZThZj89Zr.svg" /></a>
 
 # Аскинема паката brain-prime 
-https://asciinema.org/a/rXU70HQ7xG8MPhRtGVQRcM0iH
+<a href="https://asciinema.org/a/rXU70HQ7xG8MPhRtGVQRcM0iH" target="_blank"><img src="https://asciinema.org/a/rXU70HQ7xG8MPhRtGVQRcM0iH.svg" /></a>
