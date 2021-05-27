@@ -4,19 +4,19 @@
 <a href="https://codeclimate.com/github/Aleksandra-korza/frontend-project-lvl1/maintainability"><img src="https://api.codeclimate.com/v1/badges/742a11e5f9d7d51cd68c/maintainability" /></a>
 
 ### Аскинема пакета brain-games
-<a href="https://asciinema.org/a/F84D4Qi5ooJZMAC1HQFu2vvMp" target="_blank"><img src="https://asciinema.org/a/F84D4Qi5ooJZMAC1HQFu2vvMp.svg" /></a>
+[![asciicast](https://asciinema.org/a/F84D4Qi5ooJZMAC1HQFu2vvMp.svg)](https://asciinema.org/a/F84D4Qi5ooJZMAC1HQFu2vvMp)
 
 ### Аскинема паката brain-even
-<a href="https://asciinema.org/a/IjjtlMkaLFPh3Lb2Q5o81zYs5" target="_blank"><img src="https://asciinema.org/a/IjjtlMkaLFPh3Lb2Q5o81zYs5.svg" /></a>
+[![asciicast](https://asciinema.org/a/IjjtlMkaLFPh3Lb2Q5o81zYs5.svg)](https://asciinema.org/a/IjjtlMkaLFPh3Lb2Q5o81zYs5)
 
 ### Аскинема паката brain-calc
-<a href="https://asciinema.org/a/sK9Lf4rWKTBtkvGhvZmq9FNnp" target="_blank"><img src="https://asciinema.org/a/sK9Lf4rWKTBtkvGhvZmq9FNnp.svg" /></a>
+[![asciicast](https://asciinema.org/a/sK9Lf4rWKTBtkvGhvZmq9FNnp.svg)](https://asciinema.org/a/sK9Lf4rWKTBtkvGhvZmq9FNnp)
 
 ### Аскинема паката brain-gcd
-<a href="https://asciinema.org/a/jXGzUxWkwtrtRDasHsNM361zY" target="_blank"><img src="https://asciinema.org/a/jXGzUxWkwtrtRDasHsNM361zY.svg" /></a>
+[![asciicast](https://asciinema.org/a/jXGzUxWkwtrtRDasHsNM361zY.svg)](https://asciinema.org/a/jXGzUxWkwtrtRDasHsNM361zY)
 
 ### Аскинема паката brain-progression
-<a href="https://asciinema.org/a/W4sfFRURJLtQd3SVZThZj89Zr" target="_blank"><img src="https://asciinema.org/a/W4sfFRURJLtQd3SVZThZj89Zr.svg" /></a>
+[![asciicast](https://asciinema.org/a/W4sfFRURJLtQd3SVZThZj89Zr.svg)](https://asciinema.org/a/W4sfFRURJLtQd3SVZThZj89Zr)
 
 ### Аскинема паката brain-prime 
-<a href="https://asciinema.org/a/rXU70HQ7xG8MPhRtGVQRcM0iH" target="_blank"><img src="https://asciinema.org/a/rXU70HQ7xG8MPhRtGVQRcM0iH.svg" /></a>
+[![asciicast](https://asciinema.org/a/rXU70HQ7xG8MPhRtGVQRcM0iH.svg)](https://asciinema.org/a/rXU70HQ7xG8MPhRtGVQRcM0iH)
