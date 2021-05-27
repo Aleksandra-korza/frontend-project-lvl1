@@ -5,7 +5,7 @@
 
 # Аскинема пакета brain-games
 
-<a href="https://asciinema.org/a/F84D4Qi5ooJZMAC1HQFu2vvMp"><img src="https://asciinema.org/a/F84D4Qi5ooJZMAC1HQFu2vvMp"/></a>
+[![asciicast](https://asciinema.org/a/F84D4Qi5ooJZMAC1HQFu2vvMp.svg)](https://asciinema.org/a/F84D4Qi5ooJZMAC1HQFu2vvMp)
 
 # Аскинема паката brain-even  
 https://asciinema.org/a/IjjtlMkaLFPh3Lb2Q5o81zYs5
