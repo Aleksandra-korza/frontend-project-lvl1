@@ -19,7 +19,8 @@ const brainProgression = () => {
         question.push(x);
       }
       const u = Math.trunc(Math.random() * 10);
-      correctAnswer = String(question[u]);
+      // eslint-disable-next-line no-eval
+      correctAnswer = String(eval(question[u]));
       correctAnswers.push(correctAnswer);
       question[u] = '..';
 
