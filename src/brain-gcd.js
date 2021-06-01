@@ -45,5 +45,4 @@ const gameGcd = () => {
   };
   game(getGameData);
 };
-
 export default gameGcd;
