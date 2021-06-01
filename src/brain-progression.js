@@ -23,13 +23,9 @@ const brainProgression = () => {
         const a = getRandomNumb(0, 10);
 
         let x = operations[w](q, a);
-        // correctAnswers.push(String(p));
-        // questions.push(`${q} ${w} ${a}`);
 
-        // let x = eval(`${q} ${w} ${a}`);
         for (let z = 0; z < length; z += 1) {
-          // eslint-disable-next-line no-eval
-          x = eval(x + w + a);
+          x = operations[w](x, a);
           question.push(x);
         }
         const u = getRandomNumb(0, 10);
