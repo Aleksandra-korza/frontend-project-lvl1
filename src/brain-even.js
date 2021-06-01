@@ -5,25 +5,20 @@ import getRandomNumb from './getRandomNumb.js';
 
 const gameEven = () => {
   const getGameData = () => {
+    const rules = 'Answer "yes" if the number is even, otherwise answer "no".';
+    const questions = [];
     const createQuestions = (length = 3) => {
-      const rules = 'Answer "yes" if the number is even, otherwise answer "no".';
-      const questions = [];
       for (let i = 0; i < length; i += 1) {
         const q = getRandomNumb(0, 100);
         questions.push(q);
       }
-      const correctAnswers = [];
-      for (let i = 0; i < questions.length; i += 1) {
-        const correctAnswer = questions[i] % 2 === 0 ? 'yes' : 'no';
-        correctAnswers.push(correctAnswer);
-      }
-      return {
-        questions,
-        correctAnswers,
-        rules,
-      };
     };
-    const { rules, questions, correctAnswers } = createQuestions();
+    createQuestions();
+    const correctAnswers = [];
+    for (let i = 0; i < questions.length; i += 1) {
+      const correctAnswer = questions[i] % 2 === 0 ? 'yes' : 'no';
+      correctAnswers.push(correctAnswer);
+    }
     return {
       questions,
       correctAnswers,
