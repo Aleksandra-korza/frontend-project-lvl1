@@ -1,5 +1,5 @@
-/* eslint-disable no-plusplus */
 import game from './index.js'; // импортируем функцию которая создает игру. в src папке лежат файлы нашей программы.
+import getRandomNumb from './getRandomNumb.js';
 
 // отличающаяся часть новой игы. Игра которая использует движок из файла game.js.
 
@@ -8,7 +8,7 @@ const brainPrime = () => {
     const createQuestions = (length = 3) => {
       const questions = [];
       for (let i = 0; i < length; i += 1) {
-        const question = Math.trunc(Math.random() * 100);
+        const question = getRandomNumb(0, 100);
         questions.push(question);
       }
 

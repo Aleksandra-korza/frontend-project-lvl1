@@ -1,4 +1,5 @@
 import game from './index.js'; // импортируем функцию которая создает игру. в src папке лежат файлы нашей программы.
+import getRandomNumb from './getRandomNumb.js';
 
 // отличающаяся часть новой игы. Игра которая использует движок из файла game.js.
 
@@ -8,7 +9,7 @@ const gameEven = () => {
       const rules = 'Answer "yes" if the number is even, otherwise answer "no".';
       const questions = [];
       for (let i = 0; i < length; i += 1) {
-        const q = Math.trunc(Math.random() * 100);
+        const q = getRandomNumb(0, 100);
         questions.push(q);
       }
       const correctAnswers = [];

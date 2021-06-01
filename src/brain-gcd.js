@@ -1,4 +1,5 @@
 import game from './index.js';
+import getRandomNumb from './getRandomNumb.js';
 
 const gameGcd = () => {
   const getGameData = () => {
@@ -6,13 +7,12 @@ const gameGcd = () => {
       const questions = [];
       let operations = '';
       for (let i = 0; i < length; i += 1) {
-        const q = Math.trunc(Math.random() * 100);
-        const a = Math.trunc(Math.random() * 100);
+        const q = getRandomNumb(0, 100);
+        const a = getRandomNumb(0, 100);
         operations = (`${q} ${a}`);
         questions.push(operations);
       }
-      // eslint-disable-next-line consistent-return
-      const correctAnswer = (numb) => {
+      const GCD = (numb) => {
         const splits = numb.split(' ');
         const numbMax = Math.max(Number(splits[0]), Number(splits[1]));
         const numbMin = Math.min(Number(splits[0]), Number(splits[1]));
@@ -24,12 +24,13 @@ const gameGcd = () => {
             return i;
           }
         }
+        return 1;
       };
 
       const correctAnswers = [];
 
       for (let i = 0; i < questions.length; i += 1) {
-        correctAnswers.push(String(correctAnswer(questions[i])));
+        correctAnswers.push(String(GCD(questions[i])));
       }
 
       const rules = 'What is the result of the expression?';
