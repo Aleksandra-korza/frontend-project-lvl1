@@ -1,32 +1,41 @@
 import game from './index.js';
+import getRandomNumb from './getRandomNumb.js';
 
 const gameCalc = () => {
-  const createQuestions = (length = 3) => {
-    const questions = [];
-    const operation = ['+', '-', '*'];
-    let operations = '';
-    for (let i = 0; i < length; i += 1) {
-      const q = Math.trunc(Math.random() * 100);
-      const w = operation[Math.floor(Math.random() * operation.length)];
-      const a = Math.trunc(Math.random() * 100);
-      operations = (`${q} ${w} ${a}`);
-      questions.push(operations);
-    }
-    return questions;
+  const getGameData = () => {
+    const createQuestions = (length = 3) => {
+      const rules = 'What is the result of the expression?';
+      const questions = [];
+      const correctAnswers = [];
+      const operationNames = ['+', '-', '*'];
+      const operations = {
+        '+': (a, b) => a + b,
+        '-': (a, b) => a - b,
+        '*': (a, b) => a * b,
+      };
+
+      for (let i = 0; i < length; i += 1) {
+        const q = getRandomNumb(0, 100);
+        const w = operationNames[getRandomNumb(0, operationNames.length)];
+        const a = getRandomNumb(0, 100);
+        const p = operations[w](q, a);
+        correctAnswers.push(String(p));
+        questions.push(`${q} ${w} ${a}`);
+      }
+      return {
+        questions,
+        correctAnswers,
+        rules,
+      };
+    };
+    const { rules, questions, correctAnswers } = createQuestions();
+    return {
+      questions,
+      correctAnswers,
+      rules,
+    };
   };
-
-  const rules = 'What is the result of the expression?';
-
-  const questions = createQuestions();
-
-  const correctAnswers = [];
-  for (let i = 0; i < questions.length; i += 1) {
-    // eslint-disable-next-line no-eval
-    const correctAnswer = String(eval(questions[i]));
-    correctAnswers.push(correctAnswer);
-  }
-
-  game(questions, rules, correctAnswers);
+  game(getGameData);
 };
 
 export default gameCalc;

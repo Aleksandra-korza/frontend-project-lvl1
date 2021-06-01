@@ -3,25 +3,33 @@ import game from './index.js'; // импортируем функцию кото
 // отличающаяся часть новой игы. Игра которая использует движок из файла game.js.
 
 const gameEven = () => {
-  const createQuestions = (length = 3) => {
-    const questions = [];
-    for (let i = 0; i < length; i += 1) {
-      const q = Math.trunc(Math.random() * 100);
-      questions.push(q);
-    }
-    return questions;
+  const getGameData = () => {
+    const createQuestions = (length = 3) => {
+      const rules = 'Answer "yes" if the number is even, otherwise answer "no".';
+      const questions = [];
+      for (let i = 0; i < length; i += 1) {
+        const q = Math.trunc(Math.random() * 100);
+        questions.push(q);
+      }
+      const correctAnswers = [];
+      for (let i = 0; i < questions.length; i += 1) {
+        const correctAnswer = questions[i] % 2 === 0 ? 'yes' : 'no';
+        correctAnswers.push(correctAnswer);
+      }
+      return {
+        questions,
+        correctAnswers,
+        rules,
+      };
+    };
+    const { rules, questions, correctAnswers } = createQuestions();
+    return {
+      questions,
+      correctAnswers,
+      rules,
+    };
   };
-
-  const questions = createQuestions();
-
-  const rules = 'Answer "yes" if the number is even, otherwise answer "no".';
-
-  const correctAnswers = [];
-  for (let i = 0; i < questions.length; i += 1) {
-    const correctAnswer = questions[i] % 2 === 0 ? 'yes' : 'no';
-    correctAnswers.push(correctAnswer);
-  }
-  game(questions, rules, correctAnswers); // вызываю функцию, которая создает игру.
+  game(getGameData);
 };
 
 export default gameEven;
