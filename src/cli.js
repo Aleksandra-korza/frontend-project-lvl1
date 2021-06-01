@@ -7,7 +7,7 @@ const brainGames = () => {
     console.log(`Hello, ${name}!`);
   };
   // eslint-disable-next-line no-undef
-  game(getGameData);
+  getGameData();
 };
 
 export default brainGames;
