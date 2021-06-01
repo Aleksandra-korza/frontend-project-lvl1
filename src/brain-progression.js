@@ -50,4 +50,5 @@ const brainProgression = () => {
   };
   game(getGameData);
 };
+
 export default brainProgression;
