@@ -3,31 +3,26 @@ import getRandomNumb from './getRandomNumb.js';
 
 const brainProgression = () => {
   const getGameData = () => {
-    let correctAnswer = '';
+    // let correctAnswer = '';
     const correctAnswers = [];
+    const rules = 'What number is missing in the progression?';
 
     const createQuestions = (length = 10) => {
-      const rules = 'What number is missing in the progression?';
+      // const rules = 'What number is missing in the progression?';
       const questions = [];
-      const operation = ['+', '-', '*'];
-      const operations = {
-        '+': (a, b) => a + b,
-        '-': (a, b) => a - b,
-        '*': (a, b) => a * b,
-      };
       for (let i = 0; i < 3; i += 1) {
         const question = [];
 
         const q = getRandomNumb(0, 10);
-        const w = operation[getRandomNumb(0, operation.length)];
         const a = getRandomNumb(0, 10);
 
-        let x = operations[w](q, a);
+        let x = q + a;
 
         for (let z = 0; z < length; z += 1) {
-          x = operations[w](x, a);
+          x += a;
           question.push(x);
         }
+        let correctAnswer = '';
         const u = getRandomNumb(0, 10);
         correctAnswer = String(question[u]);
         correctAnswers.push(correctAnswer);
@@ -35,13 +30,11 @@ const brainProgression = () => {
 
         questions.push(question.join(' '));
       }
-
       return {
         questions,
-        rules,
       };
     };
-    const { rules, questions } = createQuestions();
+    const { questions } = createQuestions();
     return {
       questions,
       correctAnswers,
