@@ -15,7 +15,6 @@ const gameGcd = () => {
     };
     createQuestions();
 
-    // eslint-disable-next-line consistent-return
     const GCD = (numb) => {
       const splits = numb.split(' ');
       const numbMax = Math.max(Number(splits[0]), Number(splits[1]));
@@ -28,6 +27,7 @@ const gameGcd = () => {
           return i;
         }
       }
+      return 0;
     };
 
     const correctAnswers = [];
