@@ -6,19 +6,19 @@
 ### **Аскинемы пакетов:**
 
 - **brain-games**
-[![asciicast](https://asciinema.org/a/F84D4Qi5ooJZMAC1HQFu2vvMp.svg)](https://asciinema.org/a/F84D4Qi5ooJZMAC1HQFu2vvMp)
+[![asciicast](https://asciinema.org/a/GCQTjzheTLk3UPJ25feAOCjrH.svg)](https://asciinema.org/a/GCQTjzheTLk3UPJ25feAOCjrH)
 
 - **brain-even**
-[![asciicast](https://asciinema.org/a/IjjtlMkaLFPh3Lb2Q5o81zYs5.svg)](https://asciinema.org/a/IjjtlMkaLFPh3Lb2Q5o81zYs5)
+[![asciicast](https://asciinema.org/a/McyWEBcP5PYhwW2OqGDcMS2Y9.svg)](https://asciinema.org/a/McyWEBcP5PYhwW2OqGDcMS2Y9)
 
 - **brain-calc**
-[![asciicast](https://asciinema.org/a/sK9Lf4rWKTBtkvGhvZmq9FNnp.svg)](https://asciinema.org/a/sK9Lf4rWKTBtkvGhvZmq9FNnp)
+[![asciicast](https://asciinema.org/a/SkGhOW5ohPJES1gCc3Y9MWQBS.svg)](https://asciinema.org/a/SkGhOW5ohPJES1gCc3Y9MWQBS)
 
 - **brain-gcd**
-[![asciicast](https://asciinema.org/a/jXGzUxWkwtrtRDasHsNM361zY.svg)](https://asciinema.org/a/jXGzUxWkwtrtRDasHsNM361zY)
+[![asciicast](https://asciinema.org/a/1lYW2DgArOiISgjRJNA6FlWax.svg)](https://asciinema.org/a/1lYW2DgArOiISgjRJNA6FlWax)
 
 - **brain-progression**
-[![asciicast](https://asciinema.org/a/W4sfFRURJLtQd3SVZThZj89Zr.svg)](https://asciinema.org/a/W4sfFRURJLtQd3SVZThZj89Zr)
+[![asciicast](https://asciinema.org/a/Wwgm9rn5yscakaAjHk7EAsLnO.svg)](https://asciinema.org/a/Wwgm9rn5yscakaAjHk7EAsLnO)
 
 - **brain-prime** 
-[![asciicast](https://asciinema.org/a/rXU70HQ7xG8MPhRtGVQRcM0iH.svg)](https://asciinema.org/a/rXU70HQ7xG8MPhRtGVQRcM0iH)
+[![asciicast](https://asciinema.org/a/NYWdApdFmMAc1MkVQI4KU9VyQ.svg)](https://asciinema.org/a/NYWdApdFmMAc1MkVQI4KU9VyQ)
