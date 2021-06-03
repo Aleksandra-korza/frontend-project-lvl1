@@ -6,9 +6,9 @@ const gameGcd = () => {
     const questions = [];
     const createQuestions = (length = 3) => {
       let operations = '';
-      for (let i = 0; i < length; i += 1) {
-        const q = getRandomNumb(0, 100);
-        const a = getRandomNumb(0, 100);
+      for (let i = 1; i < length; i += 1) {
+        const q = getRandomNumb(1, 100);
+        const a = getRandomNumb(1, 100);
         operations = (`${q} ${a}`);
         questions.push(operations);
       }
