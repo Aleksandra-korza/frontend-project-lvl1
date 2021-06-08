@@ -19,7 +19,7 @@ const brainPrime = () => {
 
     const correctAnswers = [];
     const isPrime = (x) => {
-      for (let i = 2; i < x - 1;) {
+      for (let i = 0; i < x - 1;) {
         if ((x % i === 0) || (x === 0 || x === 1)) {
           return false;
         }
