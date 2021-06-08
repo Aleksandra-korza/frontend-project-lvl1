@@ -17,11 +17,15 @@ const gameEven = () => {
     createQuestions();
     const correctAnswers = [];
 
-    const isEven = (x) => (x % 2 === 0 ? 'yes' : 'no');
+    const isEven = (x) => (x % 2 === 0);
 
     for (let i = 0; i < questions.length; i += 1) {
-      correctAnswers.push(isEven(questions[i]));
+      if (isEven(questions[i]) === true) {
+        correctAnswers.push('yes');
+      }
+      correctAnswers.push('no');
     }
+
     return {
       questions,
       correctAnswers,
