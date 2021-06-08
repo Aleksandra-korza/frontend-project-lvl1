@@ -1,10 +1,11 @@
 import game from './index.js';
 import getRandomNumb from './getRandomNumb.js';
+import DEFAULT_ROUNDS_AMOUNT from './constants.js';
 
 const gameGcd = () => {
   const getGameData = () => {
     const questions = [];
-    const createQuestions = (length = 3) => {
+    const createQuestions = (length = DEFAULT_ROUNDS_AMOUNT) => {
       let operations = '';
       for (let i = 0; i < length; i += 1) {
         const q = getRandomNumb(1, 100);

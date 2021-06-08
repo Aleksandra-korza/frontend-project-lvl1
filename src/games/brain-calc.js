@@ -1,8 +1,9 @@
 import game from './index.js';
+import DEFAULT_ROUNDS_AMOUNT from './constants.js';
 import getRandomNumb from './getRandomNumb.js';
 
 const gameCalc = () => {
-  const getGameData = (length = 3) => {
+  const getGameData = (length = DEFAULT_ROUNDS_AMOUNT) => {
     const rules = 'What is the result of the expression?';
     const questions = [];
     const correctAnswers = [];

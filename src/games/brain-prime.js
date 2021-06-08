@@ -1,12 +1,13 @@
 import game from './index.js'; // импортируем функцию которая создает игру. в src папке лежат файлы нашей программы.
 import getRandomNumb from './getRandomNumb.js';
+import DEFAULT_ROUNDS_AMOUNT from './constants.js';
 
 // отличающаяся часть новой игы. Игра которая использует движок из файла game.js.
 
 const brainPrime = () => {
   const getGameData = () => {
     const questions = [];
-    const createQuestions = (length = 3) => {
+    const createQuestions = (length = DEFAULT_ROUNDS_AMOUNT) => {
       for (let i = 0; i < length; i += 1) {
         const question = getRandomNumb(0, 100);
         questions.push(question);

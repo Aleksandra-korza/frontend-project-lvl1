@@ -1,0 +1,2 @@
+const DEFAULT_ROUNDS_AMOUNT = 3;
+export default DEFAULT_ROUNDS_AMOUNT;
