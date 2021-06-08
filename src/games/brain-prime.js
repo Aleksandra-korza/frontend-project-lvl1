@@ -18,7 +18,7 @@ const brainPrime = () => {
     const rules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
     const correctAnswers = [];
-    const answer = (x) => {
+    const isPrime = (x) => {
       for (let i = 2; i < x - 1;) {
         if ((x % i === 0) || (x === 0 || x === 1)) {
           return false;
@@ -30,7 +30,7 @@ const brainPrime = () => {
 
     for (let i = 0; i < questions.length; i += 1) {
       const x = questions[i];
-      if (answer(x) === false) {
+      if (isPrime(x) === false) {
         correctAnswers.push('no');
       } else {
         correctAnswers.push('yes');
