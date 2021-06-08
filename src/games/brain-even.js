@@ -4,7 +4,7 @@ import DEFAULT_ROUNDS_AMOUNT from '../constants.js';
 
 // отличающаяся часть новой игы. Игра которая использует движок из файла game.js.
 
-const gameEven = () => {
+export const gameEven = () => {
   const getGameData = () => {
     const rules = 'Answer "yes" if the number is even, otherwise answer "no".';
     const questions = [];
@@ -23,7 +23,8 @@ const gameEven = () => {
       if (isEven(questions[i]) === true) {
         correctAnswers.push('yes');
       } else {
-      correctAnswers.push('no');
+        correctAnswers.push('no');
+      }
     }
 
     return {
