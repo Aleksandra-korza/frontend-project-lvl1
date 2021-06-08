@@ -20,7 +20,7 @@ const gameGcd = () => {
       const splits = numb.split(' ');
       const numbMax = Math.max(Number(splits[0]), Number(splits[1]));
       const numbMin = Math.min(Number(splits[0]), Number(splits[1]));
-      if (numbMax % numbMin === 0) {
+      if ((numbMax % numbMin === 0)) {
         return numbMin;
       }
       for (let i = numbMin - 1; i > 0; i -= 1) {
