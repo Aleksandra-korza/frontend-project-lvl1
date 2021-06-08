@@ -1,6 +1,6 @@
-import game from './index.js'; // импортируем функцию которая создает игру. в src папке лежат файлы нашей программы.
-import getRandomNumb from './getRandomNumb.js';
-import DEFAULT_ROUNDS_AMOUNT from './constants.js';
+import game from '../index.js'; // импортируем функцию которая создает игру. в src папке лежат файлы нашей программы.
+import getRandomNumb from '../getRandomNumb.js';
+import DEFAULT_ROUNDS_AMOUNT from '../constants.js';
 
 // отличающаяся часть новой игы. Игра которая использует движок из файла game.js.
 

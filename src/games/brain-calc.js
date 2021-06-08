@@ -1,6 +1,6 @@
-import game from './index.js';
-import DEFAULT_ROUNDS_AMOUNT from './constants.js';
-import getRandomNumb from './getRandomNumb.js';
+import game from '../index.js';
+import DEFAULT_ROUNDS_AMOUNT from '../constants.js';
+import getRandomNumb from '../getRandomNumb.js';
 
 const gameCalc = () => {
   const getGameData = (length = DEFAULT_ROUNDS_AMOUNT) => {

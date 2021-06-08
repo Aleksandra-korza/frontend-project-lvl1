@@ -1,5 +1,5 @@
-import game from './index.js';
-import getRandomNumb from './getRandomNumb.js';
+import game from '../index.js';
+import getRandomNumb from '../getRandomNumb.js';
 
 const brainProgression = () => {
   const getGameData = () => {

@@ -1,6 +1,6 @@
-import game from './index.js';
-import getRandomNumb from './getRandomNumb.js';
-import DEFAULT_ROUNDS_AMOUNT from './constants.js';
+import game from '../index.js';
+import getRandomNumb from '../getRandomNumb.js';
+import DEFAULT_ROUNDS_AMOUNT from '../constants.js';
 
 const gameGcd = () => {
   const getGameData = () => {
