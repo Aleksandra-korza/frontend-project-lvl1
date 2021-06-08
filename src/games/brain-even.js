@@ -22,7 +22,7 @@ const gameEven = () => {
     for (let i = 0; i < questions.length; i += 1) {
       if (isEven(questions[i]) === true) {
         correctAnswers.push('yes');
-      }
+      } else {
       correctAnswers.push('no');
     }
 
