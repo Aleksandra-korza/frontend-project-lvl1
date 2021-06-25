@@ -1,4 +1,4 @@
-import game from '../index.js';
+import startGame from '../index.js';
 import getRandomNumb from '../getRandomNumb.js';
 
 const brainProgression = () => {
@@ -41,6 +41,6 @@ const brainProgression = () => {
       rules,
     };
   };
-  game(getGameData);
+  startGame(getGameData);
 };
 export default brainProgression;

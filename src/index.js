@@ -1,7 +1,7 @@
 import readlineSync from 'readline-sync';
 
 // основная игра. Основа для игр (движок).
-const game = (getGameData) => {
+const startGame = (getGameData) => {
   const { questions, rules, correctAnswers } = getGameData();
   console.log('Welcome to the Brain Games!');
   const name = readlineSync.question('May I have your name? ');
@@ -22,4 +22,4 @@ const game = (getGameData) => {
   console.log(`Congratulations, ${name}!`);
 };
 
-export default game;
+export default startGame;

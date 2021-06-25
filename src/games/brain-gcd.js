@@ -1,4 +1,4 @@
-import game from '../index.js';
+import startGame from '../index.js';
 import getRandomNumb from '../getRandomNumb.js';
 import DEFAULT_ROUNDS_AMOUNT from '../constants.js';
 
@@ -44,7 +44,7 @@ const gameGcd = () => {
       rules,
     };
   };
-  game(getGameData);
+  startGame(getGameData);
 };
 
 export default gameGcd;

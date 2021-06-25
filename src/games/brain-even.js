@@ -1,4 +1,4 @@
-import game from '../index.js'; // импортируем функцию которая создает игру. в src папке лежат файлы нашей программы.
+import startGame from '../index.js'; // импортируем функцию которая создает игру. в src папке лежат файлы нашей программы.
 import getRandomNumb from '../getRandomNumb.js';
 import DEFAULT_ROUNDS_AMOUNT from '../constants.js';
 
@@ -33,7 +33,7 @@ export const gameEven = () => {
       rules,
     };
   };
-  game(getGameData);
+  startGame(getGameData);
 };
 
 export default gameEven;
