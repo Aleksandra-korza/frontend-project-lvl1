@@ -17,20 +17,18 @@ const GCD = (numb) => {
   return 0;
 };
 
-const getGameData = () => {
+const getGameData = (length = DEFAULT_ROUNDS_AMOUNT) => {
   const questions = [];
   const correctAnswers = [];
-  const createQuestionsAndAnswers = (length = DEFAULT_ROUNDS_AMOUNT) => {
-    let operations = '';
-    for (let i = 0; i < length; i += 1) {
-      const q = getRandomNumb(1, 100);
-      const a = getRandomNumb(1, 100);
-      operations = (`${q} ${a}`);
-      questions.push(operations);
-      correctAnswers.push(String(GCD(questions[i])));
-    }
-  };
-  createQuestionsAndAnswers();
+
+  let operations = '';
+  for (let i = 0; i < length; i += 1) {
+    const q = getRandomNumb(1, 100);
+    const a = getRandomNumb(1, 100);
+    operations = (`${q} ${a}`);
+    questions.push(operations);
+    correctAnswers.push(String(GCD(questions[i])));
+  }
 
   const rules = 'What is the result of the expression?';
   return {
