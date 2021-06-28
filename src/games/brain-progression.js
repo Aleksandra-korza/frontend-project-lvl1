@@ -13,20 +13,20 @@ const brainProgression = () => {
       for (let i = 0; i < 3; i += 1) {
         const question = [];
 
-        const q = getRandomNumb(0, 10);
-        const a = getRandomNumb(0, 10);
+        const randomNumb1 = getRandomNumb(0, 10);
+        const randomNumb2 = getRandomNumb(0, 10);
 
-        let x = q + a;
+        let iteration = randomNumb1 + randomNumb2;
 
         for (let z = 0; z < length; z += 1) {
-          x += a;
-          question.push(x);
+          iteration += randomNumb2;
+          question.push(iteration);
         }
         let correctAnswer = '';
-        const u = getRandomNumb(0, 10);
-        correctAnswer = String(question[u]);
+        const hideNumber = getRandomNumb(0, 10);
+        correctAnswer = String(question[hideNumber]);
         correctAnswers.push(correctAnswer);
-        question[u] = '..';
+        question[hideNumber] = '..';
 
         questions.push(question.join(' '));
       }
