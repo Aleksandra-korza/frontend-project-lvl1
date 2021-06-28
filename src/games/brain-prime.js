@@ -5,15 +5,12 @@ import DEFAULT_ROUNDS_AMOUNT from '../constants.js';
 // отличающаяся часть новой игы. Игра которая использует движок из файла game.js.
 
 const brainPrime = () => {
-  const getGameData = () => {
+  const getGameData = (length = DEFAULT_ROUNDS_AMOUNT) => {
     const questions = [];
-    const createQuestions = (length = DEFAULT_ROUNDS_AMOUNT) => {
-      for (let i = 0; i < length; i += 1) {
-        const question = getRandomNumb(0, 100);
-        questions.push(question);
-      }
-    };
-    createQuestions();
+    for (let i = 0; i < length; i += 1) {
+      const question = getRandomNumb(0, 100);
+      questions.push(question);
+    }
 
     const rules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 

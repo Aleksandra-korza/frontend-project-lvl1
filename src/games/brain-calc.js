@@ -2,32 +2,33 @@ import startGame from '../index.js';
 import DEFAULT_ROUNDS_AMOUNT from '../constants.js';
 import getRandomNumb from '../getRandomNumb.js';
 
-const gameCalc = () => {
-  const getGameData = (length = DEFAULT_ROUNDS_AMOUNT) => {
-    const rules = 'What is the result of the expression?';
-    const questions = [];
-    const correctAnswers = [];
-    const operationNames = ['+', '-', '*'];
-    const operations = {
-      '+': (a, b) => a + b,
-      '-': (a, b) => a - b,
-      '*': (a, b) => a * b,
-    };
-
-    for (let i = 0; i < length; i += 1) {
-      const q = getRandomNumb(0, 100);
-      const w = operationNames[getRandomNumb(0, operationNames.length)];
-      const a = getRandomNumb(0, 100);
-      const p = operations[w](q, a);
-      correctAnswers.push(String(p));
-      questions.push(`${q} ${w} ${a}`);
-    }
-    return {
-      questions,
-      correctAnswers,
-      rules,
-    };
+const getGameData = (length = DEFAULT_ROUNDS_AMOUNT) => {
+  const rules = 'What is the result of the expression?';
+  const questions = [];
+  const correctAnswers = [];
+  const operationNames = ['+', '-', '*'];
+  const operations = {
+    '+': (a, b) => a + b,
+    '-': (a, b) => a - b,
+    '*': (a, b) => a * b,
   };
+
+  for (let i = 0; i < length; i += 1) {
+    const randomNumb1 = getRandomNumb(0, 100);
+    const operation = operationNames[getRandomNumb(0, operationNames.length)];
+    const randomNumb2 = getRandomNumb(0, 100);
+    const answer = operations[operation](randomNumb1, randomNumb2);
+    correctAnswers.push(String(answer));
+    questions.push(`${randomNumb1} ${operation} ${randomNumb2}`);
+  }
+  return {
+    questions,
+    correctAnswers,
+    rules,
+  };
+};
+
+const gameCalc = () => {
   startGame(getGameData);
 };
 
