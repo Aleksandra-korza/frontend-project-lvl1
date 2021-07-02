@@ -30,8 +30,8 @@ const getGameData = (length = DEFAULT_ROUNDS_AMOUNT) => {
   };
 };
 
-export const gameEven = () => {
+export const startGameEven = () => {
   startGame(getGameData);
 };
 
-export default gameEven;
+export default startGameEven;

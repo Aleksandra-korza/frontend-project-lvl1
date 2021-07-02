@@ -28,8 +28,8 @@ const getGameData = (length = DEFAULT_ROUNDS_AMOUNT) => {
   };
 };
 
-const gameCalc = () => {
+const startGameCalc = () => {
   startGame(getGameData);
 };
 
-export default gameCalc;
+export default startGameCalc;

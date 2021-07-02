@@ -2,10 +2,7 @@ import startGame from '../index.js';
 import getRandomNumb from '../getRandomNumb.js';
 import DEFAULT_ROUNDS_AMOUNT from '../constants.js';
 
-const GCD = (numb) => {
-  const splits = numb.split(' ');
-  const numbMax = Math.max(Number(splits[0]), Number(splits[1]));
-  const numbMin = Math.min(Number(splits[0]), Number(splits[1]));
+const GCD = (numbMax, numbMin) => {
   if ((numbMax % numbMin === 0)) {
     return numbMin;
   }
@@ -21,13 +18,15 @@ const getGameData = (length = DEFAULT_ROUNDS_AMOUNT) => {
   const questions = [];
   const correctAnswers = [];
 
-  let operations = '';
+  let operation = '';
   for (let i = 0; i < length; i += 1) {
-    const q = getRandomNumb(1, 100);
-    const a = getRandomNumb(1, 100);
-    operations = (`${q} ${a}`);
-    questions.push(operations);
-    correctAnswers.push(String(GCD(questions[i])));
+    const randomNumb1 = getRandomNumb(1, 100);
+    const randomNumb2 = getRandomNumb(1, 100);
+    operation = (`${randomNumb1} ${randomNumb2}`);
+    questions.push(operation);
+    const numbMax = Math.max(Number(randomNumb1), Number(randomNumb2));
+    const numbMin = Math.min(Number(randomNumb1), Number(randomNumb2));
+    correctAnswers.push(String(GCD(numbMax, numbMin)));
   }
 
   const rules = 'What is the result of the expression?';
@@ -38,8 +37,8 @@ const getGameData = (length = DEFAULT_ROUNDS_AMOUNT) => {
   };
 };
 
-const gameGcd = () => {
+const startGameGcd = () => {
   startGame(getGameData);
 };
 
-export default gameGcd;
+export default startGameGcd;
