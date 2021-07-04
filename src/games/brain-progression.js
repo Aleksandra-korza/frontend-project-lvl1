@@ -3,7 +3,6 @@ import DEFAULT_ROUNDS_AMOUNT from '../constants.js';
 import getRandomNumb from '../getRandomNumb.js';
 
 const getGameData = (roundsCount = DEFAULT_ROUNDS_AMOUNT) => {
-  // let correctAnswer = '';
   const correctAnswers = [];
   const rules = 'What number is missing in the progression?';
 
